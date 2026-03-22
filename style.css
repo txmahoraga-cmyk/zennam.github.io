@@ -1,0 +1,163 @@
+body {
+  background: black;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+h1 {
+  color: purple;
+}
+
+button {
+  background: purple;
+  color: white;
+  padding: 10px;
+  border: none;
+}/* Smooth page fade-in */
+body {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Header animation */
+header {
+  animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Button hover */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: purple;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Video hover effect */
+video {
+  transition: transform 0.3s ease;
+}
+
+video:hover {
+  transform: scale(1.05);
+}body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background: radial-gradient(circle at top, #111 0%, #000 70%);
+  overflow-x: hidden;
+}
+
+/* Glow background effect */
+body::before {
+  content: "";
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  background: purple;
+  filter: blur(150px);
+  top: -100px;
+  left: -100px;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* Header */
+header {
+  padding: 80px 20px;
+  animation: fadeIn 1.2s ease;
+}
+
+h1 {
+  font-size: 42px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+p {
+  color: #bbb;
+}
+
+/* Button (glow effect) */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid purple;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: purple;
+  box-shadow: 0 0 20px purple;
+  transform: scale(1.08);
+}
+
+/* Video grid */
+.edits {
+  padding: 40px 20px;
+}
+
+video {
+  width: 90%;
+  max-width: 350px;
+  margin: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+video:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 20px purple;
+}
+
+/* Sections */
+section {
+  padding: 30px 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}.bg-text {
+  position: fixed;
+  font-size: 120px;
+  color: rgba(255, 255, 255, 0.03);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
